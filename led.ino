@@ -15,7 +15,6 @@
  by Tom Igoe
 
  modified by Iftikhar Khan Munthasir Islam Mahdi Mahi
-
  */
 
 #include <SPI.h>
@@ -132,8 +131,11 @@ void loop() {
 }
 
 void instructions() {
+  //Provide instructions for the client
   server.println("I don't understand");
   server.println("Please use one of these commands:");
   server.println("* ledon, to turn on the LED");
   server.println("* ledoff, to turn off the LED");
 }
+
+
